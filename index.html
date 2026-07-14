@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="#home" class="logo">Portfolio.</a>
+        <div class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+            <i class='bx bx-menu'></i>
+        </div>
+        <ul>
+            <li class="active"><a href="#home"> Home </a></li>
+            <li><a href="#about"> À Propos </a></li>
+            <li><a href="#portfolio"> Portfolio </a></li>
+            <li><a href="#services"> Services </a></li>
+            <li><a href="#contact"> Contact </a></li>
+        </ul>
+    </nav>
+
+    <div class="bars-animation">
+        <div class="bar" style="--i:6"></div>
+        <div class="bar" style="--i:5"></div>
+        <div class="bar" style="--i:4"></div>
+        <div class="bar" style="--i:3"></div>
+        <div class="bar" style="--i:2"></div>
+        <div class="bar" style="--i:1"></div>
+    </div>
+
+    <section class="home" id="home">
+            <div class="home-info">
+                <h1>Jovani Kanyinda</h1>
+                <h2>Je suis un 
+                    <span style="--i:4;" data-text="Developpeur Fullstack">Developpeur Fullstack</span>
+                    <span style="--i:3;" data-text="Influenceur">Influenceur</span>
+                    <span style="--i:2;" data-text="Designer">Designer</span>
+                    <span style="--i:1;" data-text="Guitarist">Guitarist</span>
+                </h2>
+                <p>Informaticien basé sur la programmation, développeur fullstack et guitariste professionnel, passionné par les nouvelles technologies.</p>
+                <div class="btn-sci">
+                    <a href="#" class="btn">Télécharger mon CV</a>
+                </div>
+                <div class="sci">
+                    <a href="#"><i class='bx bxl-github'></i></a>
+                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+                    <a href="#"><i class='bx bxl-twitter' ></i></a>
+                    <a href="#"><i class='bx bxl-tiktok' ></i></a>
+                </div>
+            </div>
+
+            <div class="home-img">
+                <div class="img-box">
+                    <div class="img-item">
+                        <img src="img/homePhoto.jpeg" alt="Photo de Profil">
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="section-content">
+            <h2>À Propos</h2>
+            <p>Je suis étudiant en informatique à l’université de Kinshasa, développeur fullstack mais aussi guitariste professionnel, passionné par les nouvelles technologies.</p>
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <div class="section-content">
+            <h2>Portfolio</h2>
+            <p>Voici quelques projets récents en développement web et productions musicales. Je travaille sur des sites, applications et compositions musicales.</p>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="section-content">
+            <h2>Services</h2>
+            <ul>
+                <li>Création de sites et applications web</li>
+                <li>Applications mobiles</li>
+                <li>Programmation musicale</li>
+                <li>Arrangement</li>
+                <li>Mixage et mastering</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="technologies" id="technologies">
+        <div class="section-content">
+            <h2>Technologies</h2>
+            <div class="tech-block">
+                <h3>Développement</h3>
+                <p>HTML, CSS, JavaScript, PHP, Python, java</p>
+            </div>
+            <div class="tech-block">
+                <h3>Musique</h3>
+                <p>FL Studio, Cubase, Reaper, Abelton live</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="section-content">
+            <h2>Contact</h2>
+            <div class="contact-links">
+                <a href="https://wa.me/243894448964" target="_blank"><i class='bx bxl-whatsapp'></i> +243 894 448 964</a>
+                <a href="#"><i class='bx bxl-facebook'></i> Facebook</a>
+                <a href="#"><i class='bx bxl-instagram'></i> Instagram</a>
+                <a href="#"><i class='bx bxl-tiktok'></i> TikTok</a>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navbar = document.querySelector('.navbar');
+
+        menuToggle.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+            const expanded = navbar.classList.contains('active');
+            menuToggle.setAttribute('aria-expanded', expanded);
+        });
+    </script>
+</body>
+</html>
