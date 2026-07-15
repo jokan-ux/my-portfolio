@@ -450,7 +450,7 @@ a{
     max-width: 1000px;
     margin: 0 auto;
     padding: 100px 70px;
-    color: #fff;
+    color: #0000;
 }
 
 .section-content h2{
@@ -468,10 +468,14 @@ a{
     line-height: 1.8;
 }
 
+.portfolio,
+.technologies {
+    background:#1f242d;
+}
+
 .about,
 .services,
-.technologies,
-.contact{
+.contact {
     background: rgba(15, 19, 27, 0.95);
 }
 
@@ -505,6 +509,7 @@ a{
     font-size: 30px;
     margin-bottom: 10px;
     display: inline-block;
+    color: #fff;
 }
 
 .contact-links{
