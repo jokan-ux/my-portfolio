@@ -501,6 +501,12 @@ a{
     font-size: 22px;
 }
 
+.tech-icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
 .contact-links{
     display: grid;
     gap: 14px;
